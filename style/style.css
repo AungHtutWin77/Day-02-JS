@@ -1,0 +1,39 @@
+.flex_container{
+  width: 1200px;
+  background-color: gray;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.flex_box{
+  width: 600px;
+  height: 100px;
+  margin-bottom: 15px;
+  background-color: skyblue;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px){
+  .flex_container{
+    width: 100%;
+  }
+  .flex_box{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+/* 
+mobile : 360px --> 600px
+tablet : 600px --> 1200px
+
+*/
+
+@media screen and (max-width: 1200px) and (min-width: 600px){
+  .flex_box{
+    background-color: orange;
+  }
+}
